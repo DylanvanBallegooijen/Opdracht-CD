@@ -50,9 +50,3 @@ jobs:
     steps:
       - name: check out repo on vps
         uses: actions/checkout@v3
-      - name: Recreate virtual environment for real
-        run: |
-          python3.6 -m venv lumax-portfolio-env
-          source lumax-portfolio-env/bin/activate
-          pip install wheel
-          pip install gunicorn flask

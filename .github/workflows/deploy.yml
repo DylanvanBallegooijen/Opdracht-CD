@@ -56,5 +56,3 @@ jobs:
           source lumax-portfolio-env/bin/activate
           pip install wheel
           pip install gunicorn flask
-          sudo systemctl daemon-reload
-          sudo systemctl restart lumax_portfolio

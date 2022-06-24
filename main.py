@@ -1,22 +1,19 @@
+
 # Import what we need from flask
 from flask import Flask
 
-# Create a Flask app inside `app`
 app = Flask(__name__)
 
-# Assign a function to be called when the path `/` is requested
 
-
-@app.route("/")
+@app.route('/')
 def index():
-    return "Almost finished!!"
+    return 'Hello, world!'
 
 
-@app.route("/cow")
+@app.route('/cow')
 def cow():
-    return "MOoooOo!"
+    return 'MOoooOo! Im a COooooOW'
 
 
-@app.route("/dog")
-def dog():
-    return "Beware of this cuddling little doggy, Chester!!"
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
